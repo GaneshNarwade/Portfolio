@@ -366,8 +366,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: auto;
+  height: 250px;
 }
 
 .project-title {
@@ -413,7 +413,11 @@ article .icon {
 }
 
 .contact-icon {
-  cursor: default;
+  cursor:pointer;
+}
+
+.contact-icon:hover{
+   
 }
 
 .email-icon {
@@ -428,5 +432,9 @@ footer {
 }
 
 footer p {
+  text-align: center;
+}
+
+.mail{
   text-align: center;
 }
