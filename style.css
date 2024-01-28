@@ -310,6 +310,8 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width: 100%;
+  container-type: inline-size;
 }
 
 .section-container {
@@ -334,6 +336,7 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .experience-details-container {
@@ -345,7 +348,7 @@ section {
 .article-container {
   display: flex;
   text-align: initial;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
@@ -375,8 +378,9 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: auto;
   height: 250px;
+  width: auto;
+  max-width: 100%;
 }
 
 .project-title {
@@ -396,6 +400,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  justify-content: space-between;
 }
 
 .contact-info-upper-container {
@@ -451,3 +456,12 @@ footer p {
 hr{
   margin: 5px 0 5px 0;
 }
+.contact-info-container:hover{
+  transform: scale(1.25);
+  transition: 0.5s;
+}
+.platform:hover{
+  transform: scale(1.25);
+  transition: 0.5s;
+}
+
