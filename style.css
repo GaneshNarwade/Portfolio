@@ -45,7 +45,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background-color: aliceblue;
+  background-color: gainsboro;
 }
 
 .nav-links {
@@ -310,8 +310,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  width: 100%;
-  container-type: inline-size;
+  width: auto;
 }
 
 .section-container {
@@ -348,7 +347,7 @@ section {
 .article-container {
   display: flex;
   text-align: initial;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
