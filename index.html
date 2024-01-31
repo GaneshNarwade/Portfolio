@@ -1,18 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ganesh Narwade | Portfolio</title>
-    <link rel="icon"  href="./assets/icon.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ganesh Narwade</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Narwade | Portfolio</title>
+  <link rel="icon" href="./assets/icon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Ganesh Narwade</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ganesh Narwade</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic-1.png" alt="Ganesh Narwade profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ganesh Narwade</h1>
+      <p class="section__text__p2" style="color: rgb(223, 145, 28);">Frontend Developer</p>
+      <div class="btn-container">
+        <a href="./assets/Ganesh Narwade.pdf" download>
+          <button class="btn btn-color-2" onclick="window.open(' ')">
+            Download CV
+          </button></a>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon platform"
+          onclick="location.href='https://www.linkedin.com/in/ganesh-narwade/'" target="_blank" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon platform"
+          onclick="location.href='https://github.com/ganeshnarwade', '_blank' " target="_blank" />
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="about" style="margin-bottom: 30px;">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br /><br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Tech E&TC <br /><br />Computer Operator & Programming Assistant</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p style="font-size: 18px;">
+            Passionate <span style="color: rgb(223, 145, 28);">front-end developer</span> with a vision for full-stack
+            excellence.<br>
+            I am an ambitious engineering student specializing in front-end development, currently pursuing my B.Tech
+            degree at DIEMS, Chhatrapati Sambhajinagar. I am passionate about creating <span
+              style="color: rgb(223, 145, 28);"> high-quality & secure web applications</span>. As <span
+              style="color: rgb(223, 145, 28);">an active open-source contributor </span>, I collaborate with developers
+            to enhance software reliability. My goal is to contribute meaningfully to the web development
+            industry by prioritizing seamless user experiences and robust security measures.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <hr>
+  <section id="experience" style="margin-bottom: 30px;">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools I Use </h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React Developers Tool</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Github</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>VS Code</h3>
+                <p>Intermediate +</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Canva</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Photoshop</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <hr>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/landscape-1844226_1920.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Weather App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/GaneshNarwade/Weather-App','_blank'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Spacex Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/GaneshNarwade/Spacex-clone','_blank'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/keyboard.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Virtual Keyboard</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/GaneshNarwade/Javascript','_blank'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    <p class="mail" style="margin-bottom: 30px; font-size: 30px;"> . . . and many more at <a
+        href="https://www.github.com/ganeshnarwade" style="color: rgb(223, 145, 28);">Github</a></p>
+  </section>
+  <hr>
+  <section id="contacts">
+    <h1 class="title">Services</h1>
+    <p class="section__text__p1">What I Offer</p>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            <img src="./assets/layer.png" alt="Experience icon" class="icon" /><br>Ui/UX Design
+          </h2>
+          <div class="btn-container">
+            <a href="#" class="open-popup" style="color: rgb(223, 145, 28);">More Info . . . </a>
+            <div class="popup">
+              <div class="popup-content">
+                <h4 style="text-align: left;">Ui/UX Designer</h4>
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I develop the user interface.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I design user flows and wireframes.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I create ux element interactions.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I follow SEO best practices.</p>
+
+                <button class="close-popup btn btn-color-2 project-btn" style="margin-top: 20px; ">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title"><img src="./assets/script.png" alt="Experience icon"
+              class="icon" /><br>Front End Developer</h2>
+          <a href="#" class="open-popup" style="color: rgb(223, 145, 28);">More Info . . . </a>
+
+          <div class="popup">
+            <div class="popup-content">
+              <h4 style="text-align: left;">Frontend Developer</h4>
+              <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                  class="checked" />&nbsp;&nbsp;I optimize the user experience.</p>
+
+              <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                  class="checked" />&nbsp;&nbsp;I do Implementing design on mobile websites.</p>
+
+              <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                  class="checked" />&nbsp;&nbsp;Using HTML, JavaScript and CSS to bring concepts to life.</p>
+
+              <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                  class="checked" />&nbsp;&nbsp;I test the website for usability and fixing any bugs.</p>
+
+              <button class="close-popup btn btn-color-2 project-btn" style="margin-top: 20px; ">Close</button>
+            </div>
+          </div>
+          <div class="btn-container">
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title"><img src="./assets/technician.png" alt="Experience icon"
+              class="icon" /><br>Technician</h2>
+          <div class="btn-container">
+            <a href="#" class="open-popup" style="color: rgb(223, 145, 28);">More Info . . . </a>
+
+            <div class="popup">
+              <div class="popup-content">
+                <h4 style="text-align: left;">PC<br>
+                  Builder and technician</h4>
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I test connections and operating systems on individual devices.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I update computer software programs as well as pc hardware.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I troubleshooting devices to identify and solve any issues.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I provide technical assistance.</p>
+
+                <p class="pc" style="margin-top: 10px;"><img src="./assets/checked.png" alt="Experience icon"
+                    class="checked" />&nbsp;&nbsp;I provide troubleshooting & repairing of Computer Hardware and
+                  Software.</p>
+
+                <button class="close-popup btn btn-color-2 project-btn" style="margin-top: 20px; ">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact</h1> <br>
+    <p class="mail" style="color: rgb(223, 145, 28); font-size: 20px;">ganeshdnarwade7@gmail.com</p>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <a href="mailto:ganeshdnarwade7@gmail.com">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        </a>
+      </div>
+      <div class="contact-info-container">
+        <a href="https://www.linkedin.com/in/ganesh-narwade/" target="_blank">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        </a>
+      </div>
+      <div class="contact-info-container">
+        <a href="https://www.x.com/mr_g_n7" target="_blank">
+          <img src="./assets/twitter-sign.png" alt="Twitter icon" class="icon contact-icon" />
+        </a>
+      </div>
+      <div class="contact-info-container">
+        <a href="https://www.instagram.com/__g_n7" target="_blank">
+          <img src="./assets/instagram-icon.png" alt="Twitter icon" class="icon contact-icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -21,397 +399,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ganesh Narwade</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic-1.png" alt="Ganesh Narwade profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ganesh Narwade</h1>
-        <p class="section__text__p2" style="color: rgb(223, 145, 28);">Frontend Developer</p>
-        <div class="btn-container">
-          <a href="./assets/Ganesh Narwade.pdf" download>
-          <button
-            class="btn btn-color-2"
-            onclick="window.open(' ')"
-          >
-            Download CV
-          </button></a>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon platform"
-            onclick="location.href='https://www.linkedin.com/in/ganesh-narwade/'"
-            target="_blank"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon platform"
-            onclick="location.href='https://github.com/ganeshnarwade', '_blank' "
-            target="_blank"
-          />
-        </div>
-      </div>
-    </section>
-    <hr>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br /><br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p >B.Tech E&TC <br /><br />Computer Operator & Programming Assistant</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p style="font-size: 18px;">                
-                Passionate <span style="color: rgb(223, 145, 28);">front-end developer</span> with a vision for full-stack excellence.<br>
-                I am an ambitious engineering student specializing in front-end development, currently pursuing my B.Tech degree at DIEMS, Chhatrapati Sambhajinagar. I am passionate about creating <span style="color: rgb(223, 145, 28);"> high-quality & secure web applications</span>. As <span style="color: rgb(223, 145, 28);">an active open-source contributor </span>, I collaborate with developers 
-                to enhance software reliability. My goal is to contribute meaningfully to the web development 
-                industry by prioritizing seamless user experiences and robust security measures.
-                
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <hr>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>              
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tools I Use </h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Developers Tool</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Intermediate +</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Canva</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Photoshop</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <hr>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/landscape-1844226_1920.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Weather App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/GaneshNarwade/Weather-App','_blank'"
-              > 
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Spacex Clone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/GaneshNarwade/Spacex-clone','_blank'" 
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      <p class="mail" style="margin-bottom: 30px; font-size: 30px;"> . . . and many more at <a href="https://www.github.com/ganeshnarwade" style="color: rgb(223, 145, 28);">Github</a></p>
-    </section>
-    <hr>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact</h1> <br>
-      <p class="mail" style="color: rgb(223, 145, 28); font-size: 20px;">ganeshdnarwade7@gmail.com</p>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <a href="mailto:ganeshdnarwade7@gmail.com">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          </a>
-        </div>
-        <div class="contact-info-container">
-          <a href="https://www.linkedin.com/in/ganesh-narwade/" target="_blank">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"/>
-          </a>
-        </div>
-        <div class="contact-info-container">
-          <a href="https://www.x.com/mr_g_n7" target="_blank">
-          <img 
-            src="./assets/twitter-sign.png"
-            alt="Twitter icon"
-            class="icon contact-icon"/>
-          </a>
-        </div>
-        <div class="contact-info-container">
-          <a href="https://www.instagram.com/__g_n7" target="_blank">
-            <img 
-            src="./assets/instagram-icon.png"
-            alt="Twitter icon"
-            class="icon contact-icon"/>
-          </a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Ganesh Narwade. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Copyright &#169; 2023 Ganesh Narwade. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
