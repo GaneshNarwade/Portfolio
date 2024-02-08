@@ -47,10 +47,10 @@
     }
   }
   
-  @media screen and (max-width: 592px) {
+  @media screen and (max-width: 250px) {
     #contact,
     footer {
-      height: 65vh;
+      height: 70vh;
     }
     #profile {
       height: 83vh;
