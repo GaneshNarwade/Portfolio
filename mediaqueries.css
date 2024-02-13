@@ -12,7 +12,7 @@
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
     #desktop-nav {
       display: none;
     }
@@ -47,10 +47,10 @@
     }
   }
   
-  @media screen and (max-width: 592px) {
+  @media screen and (max-width: 250px) {
     #contact,
     footer {
-      height: 40vh;
+      height: 70vh;
     }
     #profile {
       height: 83vh;
@@ -82,7 +82,7 @@
       font-size: 1.5rem;
     }
     .nav-links {
-      flex-direction: column;
+      flex-direction:row;
       gap: 0.5rem;
       text-align: center;
     }
@@ -100,4 +100,13 @@
     .text-container {
       text-align: justify;
     }
+    .nav-links-container{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .flex-item{
+      flex: 100%;
+    }
   }
+  
