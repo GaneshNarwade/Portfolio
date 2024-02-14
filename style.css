@@ -467,6 +467,7 @@ hr {
   transform: scale(1.25);
   transition: 0.5s;
 }
+
 .popup {
   display: none;
   position: fixed;
@@ -488,12 +489,12 @@ hr {
   border-radius: 20px;
 }
 
-.pc{
+.pc {
   text-align: left;
 }
 
-.checked{
+.checked {
   cursor: pointer;
   height: 1rem;
-  padding-left:10px;
+  padding-left: 10px;
 }
