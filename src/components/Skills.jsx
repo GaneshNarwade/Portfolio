@@ -31,6 +31,7 @@ const Skills = () => {
           {/*skills-stack*/}
           <div className="grid grid-cols-4 gap-3 mx-auto md:gap-6 lg:gap-8 lg:grid-cols-5 ">
             {skills.map((skill, index) => (
+
               <motion.div
                 key={index}
                 className={`flex flex-col rounded-xl w-[70px] h-[70px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] items-center justify-center bg-white shadow-lg ${skill.shadow}`}

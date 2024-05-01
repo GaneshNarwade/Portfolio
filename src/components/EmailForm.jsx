@@ -95,9 +95,10 @@ const EmailForm = () => {
                 <label className="font-medium">Message</label>
                 <textarea
                   name="message"
-                  className="w-full p-5 mb-3 font-light rounded-lg md:h-48 placeholder:text-sm placeholder:opacity-80 placeholder:italic focus:outline-v "
+                  /* className="w-full p-5 mb-3 font-light rounded-lg md:h-48 placeholder:text-sm placeholder:opacity-80 placeholder:italic focus:outline-v " */
+                  className="w-full p-5 mb-3 font-light rounded-lg md:h-full placeholder:text-sm placeholder:opacity-80 placeholder:italic focus:outline-v"
+                  rows={1}
                   placeholder="What would you like to ask me?"
-                  rows={3}
                   required
                 />
               </div>
@@ -119,7 +120,7 @@ const EmailForm = () => {
           </div>
         </form>
       </motion.div>
-    </section>
+    </section >
   );
 };
 

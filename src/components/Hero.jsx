@@ -8,25 +8,24 @@ import avatar from "../images/Georgie-Home.png";
 
 
 const Hero = () => {
-  
-  const name = "Giorgio Faini".split("");
 
+  const name = "Ganesh Narwade".split("");
   return (
     <section>
       <div className="flex flex-col items-center justify-center w-full min-h-screen text-neutral-800">
         {/*container*/}
         <div className="grid items-center gap-5 mx-8 justify-items-center lg:grid-cols-2 ">
           {/*avatar*/}
-            <div className=" w-[200px] md:w-[300px] lg:order-1 lg:w-[400px] xxl:w-[500px]">
-              <motion.img
-                variants={fadeIn("up", 0.2)}
-                initial={"hidden"}
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                src={avatar}
-                alt="A fun vector image depicting Giorgio Faini"
-              />
-            </div>
+          <div className=" w-[200px] md:w-[300px] lg:order-1 lg:w-[400px] xxl:w-[500px]">
+            <motion.img
+              variants={fadeIn("up", 0.2)}
+              initial={"hidden"}
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              src={avatar}
+              alt="A fun vector image depicting Giorgio Faini"
+            />
+          </div>
           {/*text box*/}
           <div className="flex flex-col items-center gap-1 text-center md:gap-2 lg:items-end lg:text-right ">
             <motion.p
@@ -62,14 +61,13 @@ const Hero = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-        
-              <h2 className=" text-neutral-600 text-[20px] font-semibold md:text-[24px] lg:text-3xl">I'm a</h2>
+
               <div className=" text-neutral-800 text-[20px] font-semibold md:text-[24px] lg:text-3xl">
                 <Typewriter
                   words={[
                     "Frontend Developer",
-                    "Game Developer",
-                    "Graphic Designer",
+                    "IT Support Professional",
+                    "Cybersecurity Analyst",
                   ]}
                   typeSpeed={50}
                   deleteSpeed={50}

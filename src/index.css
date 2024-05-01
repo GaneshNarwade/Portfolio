@@ -17,6 +17,11 @@
     /* @apply duration-75 ease-in hover:scale-110 hover:text-[#7c7cb3] hover:font-bold; */
   }
 
+  h1 {
+    font-size: 25px;
+    color:rgb(124 124 179);
+  }
+
   body::-webkit-scrollbar-horizontal {
     display: none;
   }
@@ -44,4 +49,3 @@
 .active {
   @apply font-bold border-b-4 border-[#7c7cb3] duration-300 transition-all ease-in-out;
 }
-
