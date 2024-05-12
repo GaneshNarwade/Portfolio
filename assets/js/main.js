@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed('.input', {
         strings: ["Web Developer", "IT Support Professional", "Cybersecurity Analyst"],
         typeSpeed: 70,
-        backSpeed: 80,
+        backSpeed: 50,
         loop: true,
     });
 });
